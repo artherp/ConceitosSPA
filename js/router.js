@@ -1,4 +1,7 @@
 class Router {
+
+    routes = {}
+
     add(routeName, page) {
         this.routes[routeName] = page
     }
@@ -24,6 +27,4 @@ class Router {
     }
 }
 
-const router = new Router()
-const router1 = new Router()
-router1.route()
+export default new Router()
